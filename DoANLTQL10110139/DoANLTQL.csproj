@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{154F8CA7-302B-4299-95B0-5D04785986D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoANLTQL10110139</RootNamespace>
+    <AssemblyName>DoANLTQL10110139</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.Designer.cs">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiemRenLuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiemRenLuyen.Designer.cs">
+      <DependentUpon>DiemRenLuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuocThoiHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuocThoiHoc.Designer.cs">
+      <DependentUpon>frmBuocThoiHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhSachSinhVien.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frmDanhSachSinhVien.Designer.cs">
+      <DependentUpon>frmDanhSachSinhVien.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frmSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSua.Designer.cs">
+      <DependentUpon>frmSua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThem.Designer.cs">
+      <DependentUpon>frmThem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXoa.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frmXoa.Designer.cs">
+      <DependentUpon>frmXoa.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="KetQuaHocTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KetQuaHocTap.Designer.cs">
+      <DependentUpon>KetQuaHocTap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhenThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhenThuong.Designer.cs">
+      <DependentUpon>KhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dangnhap.resx">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiemRenLuyen.resx">
+      <DependentUpon>DiemRenLuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuocThoiHoc.resx">
+      <DependentUpon>frmBuocThoiHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhSachSinhVien.resx">
+      <DependentUpon>frmDanhSachSinhVien.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSua.resx">
+      <DependentUpon>frmSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThem.resx">
+      <DependentUpon>frmThem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXoa.resx">
+      <DependentUpon>frmXoa.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KetQuaHocTap.resx">
+      <DependentUpon>KetQuaHocTap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhenThuong.resx">
+      <DependentUpon>KhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mr. Bomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop All.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Out_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daihocsuphamkythuatthanhphohochiminh_1322752284_6473_660x374.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Properties_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste_48x481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Negative_256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Negative_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Positive_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_48x48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

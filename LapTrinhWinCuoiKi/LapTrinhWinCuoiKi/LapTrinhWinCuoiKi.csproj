@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA41BF59-C8CE-43D2-9DA0-3F2C5E10EFE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LapTrinhWinCuoiKi</RootNamespace>
+    <AssemblyName>LapTrinhWinCuoiKi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BussinessLayer">
+      <HintPath>..\BussinessLayer\bin\Debug\BussinessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DataAccessLayer">
+      <HintPath>..\BussinessLayer\bin\Debug\DataAccessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v12.2.Core, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.2.Core, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectDatabase.Designer.cs">
+      <DependentUpon>frmConnectDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemChiTietHoaDon.Designer.cs">
+      <DependentUpon>frmThemChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemHoaDon.Designer.cs">
+      <DependentUpon>frmThemHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemKhachHang.Designer.cs">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNhanVien.Designer.cs">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemSanPham.Designer.cs">
+      <DependentUpon>frmThemSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemThanhPho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemThanhPho.Designer.cs">
+      <DependentUpon>frmThemThanhPho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectDatabase.resx">
+      <DependentUpon>frmConnectDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemChiTietHoaDon.resx">
+      <DependentUpon>frmThemChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemHoaDon.resx">
+      <DependentUpon>frmThemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemKhachHang.resx">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemNhanVien.resx">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemSanPham.resx">
+      <DependentUpon>frmThemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemThanhPho.resx">
+      <DependentUpon>frmThemThanhPho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Listhinh\Thumbs.db" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Listhinh\Add.ico" />
+    <Content Include="Listhinh\Add_16x16.png" />
+    <Content Include="Listhinh\Add_24x24.png" />
+    <Content Include="Listhinh\Add_256x256.png" />
+    <Content Include="Listhinh\Add_32x32 - Copy.png" />
+    <Content Include="Listhinh\Add_32x32.png" />
+    <Content Include="Listhinh\Add_48x48.png" />
+    <Content Include="Listhinh\Archive.ico" />
+    <Content Include="Listhinh\Archive_16x16.png" />
+    <Content Include="Listhinh\Archive_24x24.png" />
+    <Content Include="Listhinh\Archive_256x256.png" />
+    <Content Include="Listhinh\Archive_32x32.png" />
+    <Content Include="Listhinh\Archive_48x48.png" />
+    <Content Include="Listhinh\Audio Disk.ico" />
+    <Content Include="Listhinh\Audio Disk_16x16.png" />
+    <Content Include="Listhinh\Audio Disk_24x24.png" />
+    <Content Include="Listhinh\Audio Disk_256x256.png" />
+    <Content Include="Listhinh\Audio Disk_32x32.png" />
+    <Content Include="Listhinh\Audio Disk_48x48.png" />
+    <Content Include="Listhinh\Burn Disk.ico" />
+    <Content Include="Listhinh\Burn Disk_16x16.png" />
+    <Content Include="Listhinh\Burn Disk_24x24.png" />
+    <Content Include="Listhinh\Burn Disk_256x256.png" />
+    <Content Include="Listhinh\Burn Disk_32x32.png" />
+    <Content Include="Listhinh\Burn Disk_48x48.png" />
+    <Content Include="Listhinh\Calendar.ico" />
+    <Content Include="Listhinh\Calendar_16x16.png" />
+    <Content Include="Listhinh\Calendar_24x24.png" />
+    <Content Include="Listhinh\Calendar_256x256.png" />
+    <Content Include="Listhinh\Calendar_32x32.png" />
+    <Content Include="Listhinh\Calendar_48x48.png" />
+    <Content Include="Listhinh\Cancel.ico" />
+    <Content Include="Listhinh\Cancel_16x16.png" />
+    <Content Include="Listhinh\Cancel_24x24.png" />
+    <Content Include="Listhinh\Cancel_256x256.png" />
+    <Content Include="Listhinh\Cancel_32x32.png" />
+    <Content Include="Listhinh\Cancel_48x48.png" />
+    <Content Include="Listhinh\Check.ico" />
+    <Content Include="Listhinh\Check_16x16.png" />
+    <Content Include="Listhinh\Check_24x24.png" />
+    <Content Include="Listhinh\Check_256x256.png" />
+    <Content Include="Listhinh\Check_32x32.png" />
+    <Content Include="Listhinh\Check_48x48.png" />
+    <Content Include="Listhinh\Compact Disk.ico" />
+    <Content Include="Listhinh\Compact Disk_16x16.png" />
+    <Content Include="Listhinh\Compact Disk_24x24.png" />
+    <Content Include="Listhinh\Compact Disk_256x256.png" />
+    <Content Include="Listhinh\Compact Disk_32x32.png" />
+    <Content Include="Listhinh\Compact Disk_48x48.png" />
+    <Content Include="Listhinh\Copy_16x16.png" />
+    <Content Include="Listhinh\Copy_24x24.png" />
+    <Content Include="Listhinh\Copy_256x256.png" />
+    <Content Include="Listhinh\Copy_32x32.png" />
+    <Content Include="Listhinh\Copy_48x48.png" />
+    <Content Include="Listhinh\Cut_16x16.png" />
+    <Content Include="Listhinh\Cut_24x24.png" />
+    <Content Include="Listhinh\Cut_256x256.png" />
+    <Content Include="Listhinh\Cut_32x32.png" />
+    <Content Include="Listhinh\Cut_48x48.png" />
+    <Content Include="Listhinh\Delete.ico" />
+    <Content Include="Listhinh\Delete_16x16.png" />
+    <Content Include="Listhinh\Delete_24x24.png" />
+    <Content Include="Listhinh\Delete_256x256.png" />
+    <Content Include="Listhinh\Delete_32x32.png" />
+    <Content Include="Listhinh\Delete_48x48.png" />
+    <Content Include="Listhinh\Download_16x16.png" />
+    <Content Include="Listhinh\Download_24x24.png" />
+    <Content Include="Listhinh\Download_256x256.png" />
+    <Content Include="Listhinh\Download_32x32.png" />
+    <Content Include="Listhinh\Download_48x48.png" />
+    <Content Include="Listhinh\DVD Disk.ico" />
+    <Content Include="Listhinh\DVD Disk_16x16.png" />
+    <Content Include="Listhinh\DVD Disk_24x24.png" />
+    <Content Include="Listhinh\DVD Disk_256x256.png" />
+    <Content Include="Listhinh\DVD Disk_32x32.png" />
+    <Content Include="Listhinh\DVD Disk_48x48.png" />
+    <Content Include="Listhinh\Edit.ico" />
+    <Content Include="Listhinh\Edit_16x16.png" />
+    <Content Include="Listhinh\Edit_24x24.png" />
+    <Content Include="Listhinh\Edit_256x256.png" />
+    <Content Include="Listhinh\Edit_32x32.png" />
+    <Content Include="Listhinh\Edit_48x48.png" />
+    <Content Include="Listhinh\Favorites.ico" />
+    <Content Include="Listhinh\Favorites_16x16.png" />
+    <Content Include="Listhinh\Favorites_24x24.png" />
+    <Content Include="Listhinh\Favorites_256x256.png" />
+    <Content Include="Listhinh\Favorites_32x32.png" />
+    <Content Include="Listhinh\Favorites_48x48.png" />
+    <Content Include="Listhinh\Find.ico" />
+    <Content Include="Listhinh\Find_16x16.png" />
+    <Content Include="Listhinh\Find_24x24.png" />
+    <Content Include="Listhinh\Find_256x256.png" />
+    <Content Include="Listhinh\Find_32x32.png" />
+    <Content Include="Listhinh\Find_48x48.png" />
+    <Content Include="Listhinh\Flash Disk.ico" />
+    <Content Include="Listhinh\Flash Disk_16x16.png" />
+    <Content Include="Listhinh\Flash Disk_24x24.png" />
+    <Content Include="Listhinh\Flash Disk_256x256.png" />
+    <Content Include="Listhinh\Flash Disk_32x32.png" />
+    <Content Include="Listhinh\Flash Disk_48x48.png" />
+    <Content Include="Listhinh\Folder.ico" />
+    <Content Include="Listhinh\Folder_16x16.png" />
+    <Content Include="Listhinh\Folder_24x24.png" />
+    <Content Include="Listhinh\Folder_256x256.png" />
+    <Content Include="Listhinh\Folder_32x32.png" />
+    <Content Include="Listhinh\Folder_48x48.png" />
+    <Content Include="Listhinh\Forward.ico" />
+    <Content Include="Listhinh\Forward_16x16.png" />
+    <Content Include="Listhinh\Forward_24x24.png" />
+    <Content Include="Listhinh\Forward_256x256.png" />
+    <Content Include="Listhinh\Forward_32x32.png" />
+    <Content Include="Listhinh\Forward_48x48.png" />
+    <Content Include="Listhinh\Globe.ico" />
+    <Content Include="Listhinh\Globe_16x16.png" />
+    <Content Include="Listhinh\Globe_24x24.png" />
+    <Content Include="Listhinh\Globe_256x256.png" />
+    <Content Include="Listhinh\Globe_32x32.png" />
+    <Content Include="Listhinh\Globe_48x48.png" />
+    <Content Include="Listhinh\Hard Disk.ico" />
+    <Content Include="Listhinh\Hard Disk_16x16.png" />
+    <Content Include="Listhinh\Hard Disk_24x24.png" />
+    <Content Include="Listhinh\Hard Disk_256x256.png" />
+    <Content Include="Listhinh\Hard Disk_32x32.png" />
+    <Content Include="Listhinh\Hard Disk_48x48.png" />
+    <Content Include="Listhinh\Help.ico" />
+    <Content Include="Listhinh\Help_16x16.png" />
+    <Content Include="Listhinh\Help_24x24.png" />
+    <Content Include="Listhinh\Help_256x256.png" />
+    <Content Include="Listhinh\Help_32x32.png" />
+    <Content Include="Listhinh\Help_48x48.png" />
+    <Content Include="Listhinh\Information.ico" />
+    <Content Include="Listhinh\Information_16x16.png" />
+    <Content Include="Listhinh\Information_24x24.png" />
+    <Content Include="Listhinh\Information_256x256.png" />
+    <Content Include="Listhinh\Information_32x32.png" />
+    <Content Include="Listhinh\Information_48x48.png" />
+    <Content Include="Listhinh\Key.ico" />
+    <Content Include="Listhinh\Key_16x16.png" />
+    <Content Include="Listhinh\Key_24x24.png" />
+    <Content Include="Listhinh\Key_256x256.png" />
+    <Content Include="Listhinh\Key_32x32.png" />
+    <Content Include="Listhinh\Key_48x48.png" />
+    <Content Include="Listhinh\Log Out.ico" />
+    <Content Include="Listhinh\Log Out_16x16.png" />
+    <Content Include="Listhinh\Log Out_24x24.png" />
+    <Content Include="Listhinh\Log Out_256x256.png" />
+    <Content Include="Listhinh\Log Out_32x32.png" />
+    <Content Include="Listhinh\Log Out_48x48.png" />
+    <Content Include="Listhinh\Mail.ico" />
+    <Content Include="Listhinh\Mail_16x16.png" />
+    <Content Include="Listhinh\Mail_24x24.png" />
+    <Content Include="Listhinh\Mail_256x256.png" />
+    <Content Include="Listhinh\Mail_32x32.png" />
+    <Content Include="Listhinh\Mail_48x48.png" />
+    <Content Include="Listhinh\Negative.ico" />
+    <Content Include="Listhinh\Negative_16x16.png" />
+    <Content Include="Listhinh\Negative_24x24.png" />
+    <Content Include="Listhinh\Negative_256x256.png" />
+    <Content Include="Listhinh\Negative_32x32.png" />
+    <Content Include="Listhinh\Negative_48x48.png" />
+    <Content Include="Listhinh\New.ico" />
+    <Content Include="Listhinh\New_16x16.png" />
+    <Content Include="Listhinh\New_24x24.png" />
+    <Content Include="Listhinh\New_256x256.png" />
+    <Content Include="Listhinh\New_32x32.png" />
+    <Content Include="Listhinh\New_48x48.png" />
+    <Content Include="Listhinh\Next.ico" />
+    <Content Include="Listhinh\Next_16x16.png" />
+    <Content Include="Listhinh\Next_24x24.png" />
+    <Content Include="Listhinh\Next_256x256.png" />
+    <Content Include="Listhinh\Next_32x32.png" />
+    <Content Include="Listhinh\Next_48x48.png" />
+    <Content Include="Listhinh\Open.ico" />
+    <Content Include="Listhinh\Open_16x16.png" />
+    <Content Include="Listhinh\Open_24x24.png" />
+    <Content Include="Listhinh\Open_256x256.png" />
+    <Content Include="Listhinh\Open_32x32.png" />
+    <Content Include="Listhinh\Open_48x48.png" />
+    <Content Include="Listhinh\Paste.ico" />
+    <Content Include="Listhinh\Paste_16x16.png" />
+    <Content Include="Listhinh\Paste_24x24.png" />
+    <Content Include="Listhinh\Paste_256x256.png" />
+    <Content Include="Listhinh\Paste_32x32.png" />
+    <Content Include="Listhinh\Paste_48x48.png" />
+    <Content Include="Listhinh\Pause.ico" />
+    <Content Include="Listhinh\Pause_16x16.png" />
+    <Content Include="Listhinh\Pause_24x24.png" />
+    <Content Include="Listhinh\Pause_256x256.png" />
+    <Content Include="Listhinh\Pause_32x32.png" />
+    <Content Include="Listhinh\Pause_48x48.png" />
+    <Content Include="Listhinh\Picture.ico" />
+    <Content Include="Listhinh\Picture_16x16.png" />
+    <Content Include="Listhinh\Picture_24x24.png" />
+    <Content Include="Listhinh\Picture_256x256.png" />
+    <Content Include="Listhinh\Picture_32x32.png" />
+    <Content Include="Listhinh\Picture_48x48.png" />
+    <Content Include="Listhinh\Play.ico" />
+    <Content Include="Listhinh\Play_16x16.png" />
+    <Content Include="Listhinh\Play_24x24.png" />
+    <Content Include="Listhinh\Play_256x256.png" />
+    <Content Include="Listhinh\Play_32x32.png" />
+    <Content Include="Listhinh\Play_48x48.png" />
+    <Content Include="Listhinh\Positive.ico" />
+    <Content Include="Listhinh\Positive_16x16.png" />
+    <Content Include="Listhinh\Positive_24x24.png" />
+    <Content Include="Listhinh\Positive_256x256.png" />
+    <Content Include="Listhinh\Positive_32x32.png" />
+    <Content Include="Listhinh\Positive_48x48.png" />
+    <Content Include="Listhinh\Presentation.ico" />
+    <Content Include="Listhinh\Presentation_16x16.png" />
+    <Content Include="Listhinh\Presentation_24x24.png" />
+    <Content Include="Listhinh\Presentation_256x256.png" />
+    <Content Include="Listhinh\Presentation_32x32.png" />
+    <Content Include="Listhinh\Presentation_48x48.png" />
+    <Content Include="Listhinh\Preview.ico" />
+    <Content Include="Listhinh\Preview_16x16.png" />
+    <Content Include="Listhinh\Preview_24x24.png" />
+    <Content Include="Listhinh\Preview_256x256.png" />
+    <Content Include="Listhinh\Preview_32x32.png" />
+    <Content Include="Listhinh\Preview_48x48.png" />
+    <Content Include="Listhinh\Previous.ico" />
+    <Content Include="Listhinh\Previous_16x16.png" />
+    <Content Include="Listhinh\Previous_24x24.png" />
+    <Content Include="Listhinh\Previous_256x256.png" />
+    <Content Include="Listhinh\Previous_32x32.png" />
+    <Content Include="Listhinh\Previous_48x48.png" />
+    <Content Include="Listhinh\Print.ico" />
+    <Content Include="Listhinh\Print_16x16.png" />
+    <Content Include="Listhinh\Print_24x24.png" />
+    <Content Include="Listhinh\Print_256x256.png" />
+    <Content Include="Listhinh\Print_32x32.png" />
+    <Content Include="Listhinh\Print_48x48.png" />
+    <Content Include="Listhinh\Properties.ico" />
+    <Content Include="Listhinh\Properties_16x16.png" />
+    <Content Include="Listhinh\Properties_24x24.png" />
+    <Content Include="Listhinh\Properties_256x256.png" />
+    <Content Include="Listhinh\Properties_32x32.png" />
+    <Content Include="Listhinh\Properties_48x48.png" />
+    <Content Include="Listhinh\Redo.ico" />
+    <Content Include="Listhinh\Redo_16x16.png" />
+    <Content Include="Listhinh\Redo_24x24.png" />
+    <Content Include="Listhinh\Redo_256x256.png" />
+    <Content Include="Listhinh\Redo_32x32.png" />
+    <Content Include="Listhinh\Redo_48x48.png" />
+    <Content Include="Listhinh\Refresh.ico" />
+    <Content Include="Listhinh\Refresh_16x16.png" />
+    <Content Include="Listhinh\Refresh_24x24.png" />
+    <Content Include="Listhinh\Refresh_256x256.png" />
+    <Content Include="Listhinh\Refresh_32x32.png" />
+    <Content Include="Listhinh\Refresh_48x48.png" />
+    <Content Include="Listhinh\Remove.ico" />
+    <Content Include="Listhinh\Remove_16x16.png" />
+    <Content Include="Listhinh\Remove_24x24.png" />
+    <Content Include="Listhinh\Remove_256x256.png" />
+    <Content Include="Listhinh\Remove_32x32.png" />
+    <Content Include="Listhinh\Remove_48x48.png" />
+    <Content Include="Listhinh\Rename.ico" />
+    <Content Include="Listhinh\Rename_16x16.png" />
+    <Content Include="Listhinh\Rename_24x24.png" />
+    <Content Include="Listhinh\Rename_256x256.png" />
+    <Content Include="Listhinh\Rename_32x32.png" />
+    <Content Include="Listhinh\Rename_48x48.png" />
+    <Content Include="Listhinh\Save.ico" />
+    <Content Include="Listhinh\Save_16x16.png" />
+    <Content Include="Listhinh\Save_24x24.png" />
+    <Content Include="Listhinh\Save_256x256.png" />
+    <Content Include="Listhinh\Save_32x32.png" />
+    <Content Include="Listhinh\Save_48x48.png" />
+    <Content Include="Listhinh\Search.ico" />
+    <Content Include="Listhinh\Search_16x16.png" />
+    <Content Include="Listhinh\Search_24x24.png" />
+    <Content Include="Listhinh\Search_256x256.png" />
+    <Content Include="Listhinh\Search_32x32.png" />
+    <Content Include="Listhinh\Search_48x48.png" />
+    <Content Include="Listhinh\Send.ico" />
+    <Content Include="Listhinh\Send_16x16.png" />
+    <Content Include="Listhinh\Send_24x24.png" />
+    <Content Include="Listhinh\Send_256x256.png" />
+    <Content Include="Listhinh\Send_32x32.png" />
+    <Content Include="Listhinh\Send_48x48.png" />
+    <Content Include="Listhinh\Settings.ico" />
+    <Content Include="Listhinh\Settings_16x16.png" />
+    <Content Include="Listhinh\Settings_24x24.png" />
+    <Content Include="Listhinh\Settings_256x256.png" />
+    <Content Include="Listhinh\Settings_32x32.png" />
+    <Content Include="Listhinh\Settings_48x48.png" />
+    <Content Include="Listhinh\Stock Index Down.ico" />
+    <Content Include="Listhinh\Stock Index Down_16x16.png" />
+    <Content Include="Listhinh\Stock Index Down_24x24.png" />
+    <Content Include="Listhinh\Stock Index Down_256x256.png" />
+    <Content Include="Listhinh\Stock Index Down_32x32.png" />
+    <Content Include="Listhinh\Stock Index Down_48x48.png" />
+    <Content Include="Listhinh\Stock Index Up.ico" />
+    <Content Include="Listhinh\Stock Index Up_16x16.png" />
+    <Content Include="Listhinh\Stock Index Up_24x24.png" />
+    <Content Include="Listhinh\Stock Index Up_256x256.png" />
+    <Content Include="Listhinh\Stock Index Up_32x32.png" />
+    <Content Include="Listhinh\Stock Index Up_48x48.png" />
+    <Content Include="Listhinh\Stop.ico" />
+    <Content Include="Listhinh\Stop_16x16.png" />
+    <Content Include="Listhinh\Stop_24x24.png" />
+    <Content Include="Listhinh\Stop_256x256.png" />
+    <Content Include="Listhinh\Stop_32x32.png" />
+    <Content Include="Listhinh\Stop_48x48.png" />
+    <Content Include="Listhinh\Synchronize.ico" />
+    <Content Include="Listhinh\Synchronize_16x16.png" />
+    <Content Include="Listhinh\Synchronize_24x24.png" />
+    <Content Include="Listhinh\Synchronize_256x256.png" />
+    <Content Include="Listhinh\Synchronize_32x32.png" />
+    <Content Include="Listhinh\Synchronize_48x48.png" />
+    <Content Include="Listhinh\Text Document.ico" />
+    <Content Include="Listhinh\Text Document_16x16.png" />
+    <Content Include="Listhinh\Text Document_24x24.png" />
+    <Content Include="Listhinh\Text Document_256x256.png" />
+    <Content Include="Listhinh\Text Document_32x32.png" />
+    <Content Include="Listhinh\Text Document_48x48.png" />
+    <Content Include="Listhinh\Undo.ico" />
+    <Content Include="Listhinh\Undo_16x16.png" />
+    <Content Include="Listhinh\Undo_24x24.png" />
+    <Content Include="Listhinh\Undo_256x256.png" />
+    <Content Include="Listhinh\Undo_32x32.png" />
+    <Content Include="Listhinh\Undo_48x48.png" />
+    <Content Include="Listhinh\Upload.ico" />
+    <Content Include="Listhinh\Upload_16x16.png" />
+    <Content Include="Listhinh\Upload_24x24.png" />
+    <Content Include="Listhinh\Upload_256x256.png" />
+    <Content Include="Listhinh\Upload_32x32.png" />
+    <Content Include="Listhinh\Upload_48x48.png" />
+    <Content Include="Listhinh\User.ico" />
+    <Content Include="Listhinh\User.png" />
+    <Content Include="Listhinh\Users.png" />
+    <Content Include="Listhinh\User_16x16.png" />
+    <Content Include="Listhinh\User_24x24.png" />
+    <Content Include="Listhinh\User_256x256.png" />
+    <Content Include="Listhinh\User_32x32.png" />
+    <Content Include="Listhinh\User_48x48.png" />
+    <Content Include="Listhinh\Zoom In.ico" />
+    <Content Include="Listhinh\Zoom In_16x16.png" />
+    <Content Include="Listhinh\Zoom In_24x24.png" />
+    <Content Include="Listhinh\Zoom In_256x256.png" />
+    <Content Include="Listhinh\Zoom In_32x32.png" />
+    <Content Include="Listhinh\Zoom In_48x48.png" />
+    <Content Include="Listhinh\Zoom Out.ico" />
+    <Content Include="Listhinh\Zoom Out_16x16.png" />
+    <Content Include="Listhinh\Zoom Out_24x24.png" />
+    <Content Include="Listhinh\Zoom Out_256x256.png" />
+    <Content Include="Listhinh\Zoom Out_32x32.png" />
+    <Content Include="Listhinh\Zoom Out_48x48.png" />
+    <None Include="Resources\silver-database-icon2.png" />
+    <None Include="Resources\user-login-icon.png" />
+    <None Include="Resources\lock_open_321.png" />
+    <None Include="Resources\Add To Favorite.png" />
+    <None Include="Resources\lock_open_32.png" />
+    <None Include="Resources\user_info_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

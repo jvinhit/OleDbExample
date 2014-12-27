@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LapTrinhWinCuoiKi", "LapTrinhWinCuoiKi\LapTrinhWinCuoiKi.csproj", "{AA41BF59-C8CE-43D2-9DA0-3F2C5E10EFE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{986B6A46-0204-4BF9-B3CF-79346C3E9DD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessLayer", "BussinessLayer\BussinessLayer.csproj", "{99AF58B6-7FE5-4218-968E-234062130898}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA41BF59-C8CE-43D2-9DA0-3F2C5E10EFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA41BF59-C8CE-43D2-9DA0-3F2C5E10EFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA41BF59-C8CE-43D2-9DA0-3F2C5E10EFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA41BF59-C8CE-43D2-9DA0-3F2C5E10EFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986B6A46-0204-4BF9-B3CF-79346C3E9DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986B6A46-0204-4BF9-B3CF-79346C3E9DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986B6A46-0204-4BF9-B3CF-79346C3E9DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986B6A46-0204-4BF9-B3CF-79346C3E9DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99AF58B6-7FE5-4218-968E-234062130898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99AF58B6-7FE5-4218-968E-234062130898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99AF58B6-7FE5-4218-968E-234062130898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99AF58B6-7FE5-4218-968E-234062130898}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
